@@ -13,6 +13,7 @@ from cogs.ping import ping
 from cogs.help import help
 from cogs.joke import joke
 from cogs.pandafact import pandafact
+from cogs.nmap import nmap
 
 # Create bot and remove the help command since we will make our own
 bot = commands.Bot(command_prefix=prefix, help_command=None)
@@ -35,6 +36,9 @@ bot.add_cog(joke(bot))
 
 # Add pandafact cog
 bot.add_cog(pandafact(bot))
+
+# Add nmap cog
+bot.add_cog(nmap(bot))
 
 # Run bot with specified secret
 bot.run(secret)
