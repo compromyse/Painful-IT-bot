@@ -1,0 +1,6 @@
+make dev --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/data/Painful-IT-bot'
+docker build -t painful .
+docker run -it -v :/painful_files_dev painful
+make: Leaving directory '/data/Painful-IT-bot'
+ 
